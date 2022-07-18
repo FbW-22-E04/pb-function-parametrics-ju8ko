@@ -4,8 +4,13 @@
 // Example: To calculate the average of 12, 14 and 16 -
 // 12 + 14 + 16 = 42
 // 42 / 3 = 14
-
-const average = () => {};
+function average() {
+  let sum = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum / arguments.length;
+}
 
 console.log(average(0)); // -> 0
 console.log(average(1, 2)); // -> 1.5
